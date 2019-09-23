@@ -1,0 +1,44 @@
+<html lang='pt-br'>
+	<head>
+		<title>Font Awesome Icons</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		 <link rel = "stylesheet" type = "text/css" href = "style.css" />
+	</head>
+	<body>
+		<h3 align='center'>Formulário para teste de programação da Elo-Group</h3>
+		<form method='post' id='form'>
+			Nome e Sobrenome*:<br>
+			<input type='text' name='nome' id='nome'  placeholder='ex. Charly Braga'  pattern="[A-Z]+[a-z]+\s[A-Z]+[a-z]+[\sA-Za-z]" required ></input><br><br>
+			Telefone*:<br>
+			<input type='text' name='telefone' id='telefone'  placeholder='ex. 99 - 99999999'   pattern="[0-9]{2} - [0-9]{8}" required ></input><br><br>
+		
+			Como nos conheceu?<br>
+			<select name='como_nos_conheceu_select' id='como_nos_conheceu_select' required >
+			  <option disabled selected value>Selecione uma opção</option>
+			  <option value="conheceu_por_tv">TV</option>
+			  <option value="conheceu_por_internet">Internet</option>
+			  <option value="conheceu_por_outros">Outros</option>
+			</select><br><br>
+			
+			
+			Possui rede social?<br>
+			<input type='radio' name='possui_rede_social' id='possui_rede_social_sim' required  ></input>Sim<br>
+			<input type='radio' name='possui_rede_social' id='possui_rede_social_nao'  ></input>Não<br><br>
+				
+			<div id='qual_rede_social_div'>
+				Quais?<br>
+				<input type='checkbox' name='qual_rede_social[]' id='qual_rede_social_facebook' ></input>Facebook<br>
+				<input type='checkbox' name='qual_rede_social[]' id='qual_rede_social_linkedin' ></input>Linkedin<br>
+				<input type='checkbox' name='qual_rede_social[]' id='qual_rede_social_instagram'></input>Instagram<br><br>
+			</div>
+			
+			<input type="submit" value='Enviar' id='botao_enviar'>
+		</form>
+		
+	</body>
+	<script src='jquery.js'> </script>
+	<script src='mostra_oculta_checkbox.js'> </script>
+	<script src='envia_json.js'> </script>
+	
+</html>
